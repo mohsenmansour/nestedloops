@@ -7,10 +7,12 @@ printf("Enter any number: ");
     scanf("%d", &n);
 
     first = n;
-if(first >= 10)
+while(first >= 10)
 {
 first = first / 10;
-printf("First digit = %d\n", first);
-}
-return 0;
+    }
+
+    printf("First digit = %d\n", first);
+
+    return 0;
 }
