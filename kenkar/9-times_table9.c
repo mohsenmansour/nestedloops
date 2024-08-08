@@ -8,8 +8,24 @@ int main() {
                 for (j = 0; j < 10; j++)
                 {
                         k = j * i;
-printf("%d, ",k);
+                        if (j == 0)
+                        {
+printf("%d",k);
+}
+if (k < 10 && j != 0)
+{
+printf(",");
 printf(" ");
+printf(" ");
+printf("%d",k);
+}
+else if (k >= 10)
+{
+printf(",");
+printf(" ");
+printf("%d",k/10);
+printf("%d",k%10);
+}
 }
 printf("\n");
 }
